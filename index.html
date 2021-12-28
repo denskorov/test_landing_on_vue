@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&amp;display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="top">
+
+<div id="app">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg"><a class="navbar-brand font-family-motter" href="#top">Cornelia</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-right">
+                        <li class="nav-item"><a class="nav-link" href="#sec_3">Learn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sec_5">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer">Why</a></li>
+                    </ul>
+                    <form class="form-inline form-download d-flex justify-content-center">
+                        <v-button tag="button" class="bg-dark-green text-accent" type="submit" v-text="'Download'"/>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <v-section class="section_1">
+        <div class="container text-center">
+            <v-title class="text-accent">
+                <span>Cornelia<br> is the new<br></span><span> black</span>
+            </v-title>
+            <img src="./images/sec_1_horse.png"></div>
+    </v-section>
+    <v-section class="section_2 bg-accent text-white">
+        <div class="container text-center">
+            <v-title title-level="2">Toward infinity<br>and beyond</v-title>
+            <p>Discover your new favourite mascot. With her, boost your imagination and decorate your workspace.May
+                Cornelia
+                accompany you in your daily life and in the most perilous missions you may encounter.</p>
+            <p>With her, give yourself the means to succeed, <b>believe in yourself and in your dreams!</b></p></div>
+    </v-section>
+    <v-section class="section_3 text-accent bg-dark-green" id="sec_3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <v-title title-level="3">Choose your destiny</v-title>
+                    <p>Each unicorn has its own personality and symbolism. Get to know your new mascot and surround
+                        yourself
+                        with a strong ally. Thus choose the brave one and you will be able to face any situation. Take
+                        the
+                        sweet Cornelia and protect your health. If you need more luck, meet the Magic Cornelia! If
+                        you’re
+                        born to be bold, choose the Impetuous Cornelia : nothing will defeat you.</p>
+                    <!--                    <a class="btn btn-border text-accent" href="#"></a>-->
+                    <v-button tag="a" href="#" class="btn-border text-accent"
+                              v-text="'Learn more about her story'"></v-button>
+                </div>
+                <div class="col-md-6"><img src="./images/sec_3_horse.png"></div>
+            </div>
+        </div>
+    </v-section>
+    <v-section class="section_4 block-even-odd" id="sec_5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="./images/sec_4_img_1.png"></div>
+                <div class="col-md-6">
+                    <v-title title-level="3">Always<br>Go futher</v-title>
+                    <p>Decline Cornelia as you wish! Black, dark grey, white, light grey, prussian blue ... Choose your
+                        colour, size and characteristics! And if that's not enough, personalise it to make it unique, in
+                        your own image. So open up the field of possibilities, the world is yours !</p>
+                    <p><a class="btn-link" href="#"><img class="mr-2" src="./images/icons/icon_scroll_mouse.svg"><span
+                        class="text-uppercase">SCROLL TO KNOW MORE</span></a></p></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"><img src="./images/sec_4_img_2.png"></div>
+                <div class="col-md-6">
+                    <v-title title-level="3">Premium<br>3D Quality</v-title>
+                    <p>Now the difference between a unicorn and a pegasus is quite clear a unicorn has a horn which
+                        usually
+                        stores their magically powers while a pegasus can only fly with its gorgeous wings. Now the
+                        difference between a unicorn and a pegasus is quite clear a unicorn has a horn.</p></div>
+            </div>
+        </div>
+    </v-section>
+    <v-section class="section_5 text-center">
+        <div class="container">
+            <v-title title-level="2">Let the magic happen</v-title>
+            <p>Surround yourself with the most faithful companions and embark together on fantastic new adventures!
+                Pocket,
+                medium or XXL format, find the Cornelia that best suits your environment.</p>
+            <p><b>Oh, and don't worry:</b> Cornelia feeds on your bad vibes, no need to give her water or grass!</p>
+        </div>
+    </v-section>
+    <v-section class="section_6">
+        <div class="container">
+            <v-title class="text-center text-white" title-level="3">
+                They talk about it better than us
+            </v-title>
+            <div class="comments-box" id="comments">
+                <v-sec-6-item v-for="item of items" v-bind:item="item" v-bind:key="item.id"></v-sec-6-item>
+            </div>
+        </div>
+    </v-section>
+    <v-section class="section_7 block-even-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="./images/sec_7_img_1.png"></div>
+                <div class="col-md-6">
+                    <v-title title-level="3">Each lesser<br> detail matter</v-title>
+                    <p>Cornelia is an all-in-one tool that helps teams design every part of the product experience.
+                        Download
+                        and get to a functional prototype faster than ever.</p>
+                    <p>
+                        <v-button class="btn-border" tag="a" href="#" v-text="'Discover Cornelia'"></v-button>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"><img src="./images/sec_7_img_2.png"></div>
+                <div class="col-md-6">
+                    <div class="text-center"><img src="./images/icons/icon-logo-app-store.png"></div>
+                    <v-title title-level="3">Unicorns exist</v-title>
+                    <p>Download our appliaction on the AppStore or the 3D model of Cornelia and meet your new mascot !
+                        Take
+                        some cool pictures of her and share it on Instagram, Twitter and Facebook with
+                        #CorneliaTheUnicorn
+                        !</p>
+                    <p><a class="btn btn-border" href="#">Meet Cornelia in VR</a></p></div>
+            </div>
+        </div>
+    </v-section>
+
+    <footer class="section bg-dark-green text-accent" id="footer">
+        <div class="container">
+            <v-title class="text-center" title-level="2">Get started with<br> Cornelia today</v-title>
+            <div class="d-flex justify-content-center footer-download"><a
+                class="btn btn-border btn-border-bottom-transparent" href="#"><img class="mr-2"
+                                                                                   src="./images/icons/figma_logo.svg"><span>Download for<br> Figma</span></a><a
+                class="btn btn-border btn-border-bottom-transparent" href="#"><img class="mr-2"
+                                                                                   src="./images/icons/sketch_logo.svg"><span>Download for<br> Sketch</span></a>
+            </div>
+            <div class="footer-bottom"><h4 class="font-family-motter">Cornelia</h4>
+                <p>Design & Development</p></div>
+        </div>
+    </footer>
+</div>
+
+<script type="text/x-template" id="section">
+    <section class="section">
+        <!--TODO: https://ru.vuejs.org/v2/guide/components-slots.html-->
+        <slot/>
+    </section>
+</script>
+
+<script type="text/x-template" id="sec_6_grid_item">
+    <div class="item"><p>{{ item.title }}</p>
+        <div class="item-author d-flex align-items-center">
+            <div class="item-author-image"><img v-bind:src="item.url"></div>
+            <p class="item-author-info flex-grow-1"><b>{{ item.name }}</b><br>{{ item.username }}</p>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" id="button">
+    <component v-bind:is="tag" class="btn"></component>
+</script>
+
+<script type="text/x-template" id="title">
+    <component v-bind:is="tagName">
+        <slot></slot>
+    </component>
+</script>
+
+<script src="./js/app.min.js"></script>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
